@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1BA51B26-B87C-44B3-844A-E0B24447D2DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCSBackOffice</RootNamespace>
+    <AssemblyName>TCSBackOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddIngredient.Designer.cs">
+      <DependentUpon>AddIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteIngredient.Designer.cs">
+      <DependentUpon>DeleteIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilterIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilterIngredient.Designer.cs">
+      <DependentUpon>FilterIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListIngredient.Designer.cs">
+      <DependentUpon>ListIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngredientMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngredientMenu.Designer.cs">
+      <DependentUpon>IngredientMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffLogin.Designer.cs">
+      <DependentUpon>StaffLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdiBackend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiBackend.Designer.cs">
+      <DependentUpon>mdiBackend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaffMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffMenu.Designer.cs">
+      <DependentUpon>StaffMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateIngredient.Designer.cs">
+      <DependentUpon>UpdateIngredient.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddIngredient.resx">
+      <DependentUpon>AddIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteIngredient.resx">
+      <DependentUpon>DeleteIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterIngredient.resx">
+      <DependentUpon>FilterIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListIngredient.resx">
+      <DependentUpon>ListIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffLogin.resx">
+      <DependentUpon>StaffLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngredientMenu.resx">
+      <DependentUpon>IngredientMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiBackend.resx">
+      <DependentUpon>mdiBackend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StaffMenu.resx">
+      <DependentUpon>StaffMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateIngredient.resx">
+      <DependentUpon>UpdateIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{6ce0e978-ce1f-41da-a9b3-480fb23c2d9b}</Project>
+      <Name>ClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
